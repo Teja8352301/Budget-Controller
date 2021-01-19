@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budget Application</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="mobile.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div id="total_budget" class="p-3 d-flex flex-column align-items-center">
+        <div
+          class="lead text-white d-flex flex-column align-items-center justify-content-center"
+          id="total_month"
+        >
+          Available Budget in March 2020
+        </div>
+        <div class="display-4 text-white" id="total_amount">+0</div>
+      </div>
+      <div id="total_income" class="d-flex justify-content-around p-3">
+        <div class="lead text-white" id="income_heading">INCOME</div>
+        <div class="lead text-white" id="income_amount">+0</div>
+      </div>
+      <div id="total_expense" class="d-flex justify-content-around p-3">
+        <div class="lead text-white" id="expense_heading">EXPENSE</div>
+        <div class="lead text-white" id="expense_amount">-0</div>
+      </div>
+    </div>
+    <div id="form_group" class="d-flex justify-content-around bg-secondary p-3">
+      <select name="symbol" id="symbol" class="form-control">
+        <option value="plus">+</option>
+        <option value="minus">-</option>
+      </select>
+      <div id="input_name1">
+        <input
+          type="text"
+          id="input_name"
+          class="form-control"
+          placeholder="Enter Description"
+        />
+      </div>
+      <div id="input_value1">
+        <input
+          id="input_value"
+          type="number"
+          id="input_value"
+          class="form-control"
+        />
+      </div>
+      <div id="input_check">
+        <i
+          class="fa fa-check-circle bg-white p-2 rounded"
+          style="font-size: 26px; color: grey"
+        ></i>
+      </div>
+    </div>
+    <div id="section" class="d-flex justify-content-around p-3">
+      <div id="income_list">
+        <div class="h3 pb-2">Income</div>
+        <div id="insertHtml">
+          <!-- <div
+            id="income_item"
+            class="d-flex justify-content-between bg-info text-white align-items-center rounded pl-2 mb-3"
+          >
+            <div class="h4">Deposits</div>
+            <div
+              class="h4 pt-2 d-flex align-items-center justify-content-center"
+            >
+              2000<span class="badge badge-light bg-danger m-2 text-white"
+                >36%</span
+              >
+              <div class="rounded bg-danger clos">
+                <i
+                  class="fa fa-close text-white d-flex justify-content-center align-items-center"
+                  style="font-size: 24px"
+                ></i>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <div id="expense_list">
+        <div class="h3 pb-2">Expense</div>
+        <div id="insertHtml2">
+          <!-- <div
+            id="expense_item"
+            class="d-flex justify-content-between bg-info text-white align-items-center rounded pl-2 mb-3"
+          >
+            <div class="h4">Groceries</div>
+            <div
+              class="h4 pt-2 d-flex align-items-center justify-content-center"
+            >
+              2000<span class="badge badge-light bg-danger m-2 text-white"
+                >36%</span
+              >
+              <div class="rounded bg-danger clos">
+                <i
+                  class="fa fa-close text-white d-flex justify-content-center align-items-center"
+                  style="font-size: 24px"
+                ></i>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <script src="js.js"></script>
+  </body>
+</html>

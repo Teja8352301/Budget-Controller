@@ -1,0 +1,23 @@
+@media (max-width: 700px) {
+  body {
+    overflow-x: hidden;
+  }
+  #input_name {
+    width: 150px !important;
+  }
+  .fa-check-circle {
+    height: 40px !important;
+  }
+  #section {
+    display: flex;
+    flex-direction: column;
+  }
+  #expense_list,
+  #income_list {
+    width: 100%;
+    border-bottom: 1px solid rgb(0, 225, 255);
+  }
+  #input_value {
+    width: 50px;
+  }
+}
